@@ -31,9 +31,11 @@ void mostrar_directorios(const std::string& ruta, int nivel = 0)
 
 int main()
 {
-    // Solicitar la ruta al usuario
     std::string ruta_usuario;
+    
+    // Solicitar la ruta al usuario
     std::cout << "Enter directory: ";
+    
     std::getline(std::cin, ruta_usuario);
 
     // Mostrar el contenido de manera jerárquica
