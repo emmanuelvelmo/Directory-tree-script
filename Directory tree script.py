@@ -19,11 +19,12 @@ def mostrar_directorios(ruta, nivel = 0):
             # Llamada recursiva para mostrar subdirectorios y archivos
             mostrar_directorios(os.path.join(ruta, elemento), nivel + 1)
 
-# Solicitar la ruta al usuario
-ruta_usuario = input("Enter directory: ")
-
-# Mostrar el contenido de manera jerárquica
-mostrar_directorios(ruta_usuario)
-
-# Mantener la consola abierta
-input()
+while True: 
+    # Solicitar la ruta al usuario
+    ruta_usuario = input("Enter directory: ")
+    
+    # Mostrar el contenido de manera jerárquica
+    mostrar_directorios(ruta_usuario)
+    
+    # Salto de línea al final de mostrar un directorio
+    print()
